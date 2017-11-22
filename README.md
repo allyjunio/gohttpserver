@@ -4,6 +4,10 @@
 
 # Installation
 
+        go get -u github.com/go-sql-driver/mysql
+        go get -u github.com/elgs/gosqljson
+        go get -u github.com/gorilla/mux
+
         git clone https://github.com/allyjunio/gohttpserver.git
         cd gohttpserver
         go run server.go
