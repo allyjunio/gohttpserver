@@ -16,7 +16,6 @@ import (
 	"github.com/gorilla/mux"
 	"database/sql"
 	"log"
-	"fmt"
 	"time"
 )
 
