@@ -55,7 +55,6 @@ func getBonusDepartment(w http.ResponseWriter, r *http.Request) {
 
 func getEmployees(w http.ResponseWriter, r *http.Request) {
 	data, _ := gosqljson.QueryDbToMapJSON(db, theCase, "SELECT emp_id as employeeId, emp_name as employeeName, dept_no as deptId, salary, DATE_FORMAT(hire_date, '%d-%b-%Y') as hireDate FROM employees")
-	fmt.Println(data)
 	w.Write([]byte(data))
 }
 
